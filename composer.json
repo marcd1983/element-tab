@@ -1,0 +1,22 @@
+{
+    "name": "antlion/element-tab",
+    "description": "Elemental tabs block",
+    "license": "BSD-3-Clause",
+    "type": "silverstripe-vendormodule",
+    "keywords": [
+        "silverstripe",
+        "elemental",
+        "blocks",
+        "tab"
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Antlion\\ElementTab\\": "src/"
+        }
+    },
+    "config": {
+        "process-timeout": 600
+    }
+}
