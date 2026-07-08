@@ -22,7 +22,7 @@
                     <% end_if %>
                     $Content
                     <% if $Links.Exists %>
-                        <div class="button-group <% if $Align == 'center' %>align-center<% else_if $Align == 'right' %>align-right<% else %>align-left<% end_if %>">
+                        <div class="button-group">
                         <% loop $Links %>
                             <a class="button $CssClass" href="$URL" <% if $OpenInNew %>target="_blank" rel="noopener noreferrer"<% end_if %>>$Title.XML</a>
                         <% end_loop %>
