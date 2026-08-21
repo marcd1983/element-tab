@@ -1,3 +1,4 @@
+<% cached $ID, $LastEdited, $Panels.Count, $Panels.Max('LastEdited') %>
 <div class="cell">
     <% if $Title && $ShowTitle %>
         <% with $HeadingTag %>
@@ -16,7 +17,7 @@
         <div class="tabs-content" data-tabs-content="tab-{$ID}">
             <% loop $Panels %>
                 <div class="tabs-panel <% if $IsFirst %>is-active<% end_if %>" id="panel{$ID}">
-                    <% if $Image %>   
+                    <% if $Image %>
                         <img src="$Image.URL" class="img-responsive" alt="$Title.ATT">
                         <p></p>
                     <% end_if %>
@@ -33,3 +34,4 @@
         </div>
     <% end_if %>
 </div>
+<% end_cached %>
