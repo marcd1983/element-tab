@@ -1,0 +1,25 @@
+en:
+  Antlion\ElementTab\Elements\ElementTab:
+    BlockType: Tabs
+    ContentDescription: 'optional. Add introductory copy to your tabs element.'
+    ContentLabel: Intro
+    PLURALNAME: blocks
+    PLURALS:
+      one: 'A block'
+      other: '{count} blocks'
+    PanelsLabel: Panels
+    SINGULARNAME: block
+    db_Content: Content
+    has_many_Panels: Panels
+  Antlion\ElementTab\Models\TabPanel:
+    PLURALNAME: 'tab panels'
+    PLURALS:
+      one: 'A tab panel'
+      other: '{count} tab panels'
+    SINGULARNAME: 'tab panel'
+    db_Content: Content
+    db_Sort: Sort
+    db_Title: Title
+    has_many_Links: Links
+    has_one_Image: Image
+    has_one_Tab: Tab

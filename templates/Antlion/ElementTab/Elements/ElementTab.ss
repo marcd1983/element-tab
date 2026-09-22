@@ -18,7 +18,7 @@
             <% loop $Panels %>
                 <div class="tabs-panel <% if $IsFirst %>is-active<% end_if %>" id="panel{$ID}">
                     <% if $Image %>
-                        <img src="$Image.URL" class="img-responsive" alt="$Title.ATT">
+                        <% include ResponsiveImage Image=$Image, Alt=$Title, CSSClass="img-responsive" %>
                         <p></p>
                     <% end_if %>
                     $Content
